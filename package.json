@@ -1,0 +1,20 @@
+{
+  "name": "gird",
+  "version": "0.0.1",
+  "description": "Fixed application grids",
+  "main": "Gruntfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-less": "~0.5.0"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottcorgan/gird.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README",
+  "gitHead": "cb3b30108b71dd5a981e92a91910405bf7e1731c"
+}
