@@ -5,81 +5,87 @@ html {
   max-width: 100%;
   width: 100%;
 }
-.container,
-.container-layout {
+.grid,
+.grid-layout {
   background: red;
-  box-sizing: border-box;
-  font-size: 0;
-  height: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 1;
-}
-.container > .col1,
-.container > .col2,
-.container > .col3,
-.container > .col4,
-.container > .col5,
-.container > .col6,
-.container > .col7,
-.container > .col8,
-.container > .col9,
-.container > .col10,
-.container > .col11,
-.container > .col12 {
-  background: blue;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  font-size: 14px;
-  height: 100%;
+}
+.grid {
+  margin: 0 0 20px 0;
+}
+.grid.grid-pad {
+  padding: 20px 0 20px 20px;
+}
+.grid.grid-pad > [class*="col"]:last-of-type {
+  padding-right: 20px;
+}
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.grid > [class*="col"] {
+  background: gray;
+  float: left;
+  padding-right: 20px;
   position: relative;
   vertical-align: top;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.container > .col1 {
-  width: 8.333333333333334%;
+.grid > [class*="col"]:last-of-type {
+  padding-right: 0;
 }
-.container > .col2 {
-  width: 16.666666666666668%;
+.grid > .col1 {
+  width: 8.33%;
 }
-.container > .col3 {
-  width: 33.333333333333336%;
+.grid > .col2 {
+  width: 16.66%;
 }
-.container > .col4 {
-  width: 33.333333333333336%;
+.grid > .col3 {
+  width: 25%;
 }
-.container > .col5 {
-  width: 8.333333333333334%;
+.grid > .col4 {
+  width: 33.33%;
 }
-.container > .col6 {
+.grid > .col5 {
+  width: 41.66%;
+}
+.grid > .col6 {
   width: 50%;
 }
-.container > .col7 {
-  width: 58.333333333333336%;
+.grid > .col7 {
+  width: 58.33%;
 }
-.container > .col8 {
-  width: 66.66666666666667%;
+.grid > .col8 {
+  width: 66.66%;
 }
-.container > .col9 {
+.grid > .col9 {
   width: 75%;
 }
-.container > .col10 {
-  width: 83.33333333333334%;
+.grid > .col10 {
+  width: 83.33%;
 }
-.container > .col11 {
-  width: 91.66666666666667%;
+.grid > .col11 {
+  width: 91.66%;
 }
-.container > .col12 {
+.grid > .col12 {
   width: 100%;
 }
-.container-layout {
+.grid-layout {
   background: black;
   height: 100%;
   overflow: hidden;
 }
-.container-layout > .sidebar,
-.container-layout > .content {
-  box-sizing: border-box;
+.grid-layout > .sidebar,
+.grid-layout > .content {
   height: 100%;
   font-size: 14px;
   left: 0;
@@ -87,111 +93,114 @@ html {
   position: absolute;
   top: 0;
   width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-.container-layout.split200 > .sidebar {
+.grid-layout.split200 > .sidebar {
   width: 200px;
 }
-.container-layout.split200 > .content {
+.grid-layout.split200 > .content {
   padding-left: 200px;
 }
-.container-layout.split200.right > .sidebar {
+.grid-layout.split200.right > .sidebar {
   left: 100%;
   margin-left: -200px;
 }
-.container-layout.split200.right > .content {
+.grid-layout.split200.right > .content {
   padding-left: 0;
   padding-right: 200px;
 }
-.container-layout.split250 > .sidebar {
+.grid-layout.split250 > .sidebar {
   width: 250px;
 }
-.container-layout.split250 > .content {
+.grid-layout.split250 > .content {
   padding-left: 250px;
 }
-.container-layout.split250.right > .sidebar {
+.grid-layout.split250.right > .sidebar {
   left: 100%;
   margin-left: -250px;
 }
-.container-layout.split250.right > .content {
+.grid-layout.split250.right > .content {
   padding-left: 0;
   padding-right: 250px;
 }
-.container-layout.split300 > .sidebar {
+.grid-layout.split300 > .sidebar {
   width: 300px;
 }
-.container-layout.split300 > .content {
+.grid-layout.split300 > .content {
   padding-left: 300px;
 }
-.container-layout.split300.right > .sidebar {
+.grid-layout.split300.right > .sidebar {
   left: 100%;
   margin-left: -300px;
 }
-.container-layout.split300.right > .content {
+.grid-layout.split300.right > .content {
   padding-left: 0;
   padding-right: 300px;
 }
-.container-layout.split350 > .sidebar {
+.grid-layout.split350 > .sidebar {
   width: 350px;
 }
-.container-layout.split350 > .content {
+.grid-layout.split350 > .content {
   padding-left: 350px;
 }
-.container-layout.split350.right > .sidebar {
+.grid-layout.split350.right > .sidebar {
   left: 100%;
   margin-left: -350px;
 }
-.container-layout.split350.right > .content {
+.grid-layout.split350.right > .content {
   padding-left: 0;
   padding-right: 350px;
 }
-.container-layout.split400 > .sidebar {
+.grid-layout.split400 > .sidebar {
   width: 400px;
 }
-.container-layout.split400 > .content {
+.grid-layout.split400 > .content {
   padding-left: 400px;
 }
-.container-layout.split400.right > .sidebar {
+.grid-layout.split400.right > .sidebar {
   left: 100%;
   margin-left: -400px;
 }
-.container-layout.split400.right > .content {
+.grid-layout.split400.right > .content {
   padding-left: 0;
   padding-right: 400px;
 }
-.container-layout.split450 > .sidebar {
+.grid-layout.split450 > .sidebar {
   width: 450px;
 }
-.container-layout.split450 > .content {
+.grid-layout.split450 > .content {
   padding-left: 450px;
 }
-.container-layout.split450.right > .sidebar {
+.grid-layout.split450.right > .sidebar {
   left: 100%;
   margin-left: -450px;
 }
-.container-layout.split450.right > .content {
+.grid-layout.split450.right > .content {
   padding-left: 0;
   padding-right: 450px;
 }
-.container-layout.split-half > .sidebar {
+.grid-layout.split-half > .sidebar {
   width: 50%;
 }
-.container-layout.split-half > .content {
+.grid-layout.split-half > .content {
   padding-left: 50%;
 }
-.container-layout.split-half.right > .sidebar {
+.grid-layout.split-half.right > .sidebar {
   left: 100%;
   margin-left: -50%;
 }
-.container-layout.split-half.right > .content {
+.grid-layout.split-half.right > .content {
   padding-left: 0;
   padding-right: 50%;
 }
-.container-layout > .sidebar {
+.grid-layout > .sidebar {
   background: green;
   width: 100%;
   z-index: 2;
 }
-.container-layout > .content {
+.grid-layout > .content {
   background: yellow;
   z-index: 1;
 }
