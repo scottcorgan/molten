@@ -1,0 +1,154 @@
+body,
+html {
+  height: 100%;
+  min-height: 100%;
+  max-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+}
+.container,
+.container-layout {
+  background: red;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.container .col1,
+.container .col2,
+.container .col3,
+.container .col4,
+.container .col5,
+.container .col6,
+.container .col7,
+.container .col8,
+.container .col9,
+.container .col10,
+.container .col11,
+.container .col12 {
+  background: blue;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+}
+.container .col1 {
+  width: calc(8.333333333333334%);
+}
+.container .col2 {
+  width: calc(16.666666666666668%);
+}
+.container .col3 {
+  width: calc(33.333333333333336%);
+}
+.container .col4 {
+  width: calc(33.333333333333336%);
+}
+.container .col5 {
+  width: calc(41.66666666666667%);
+}
+.container .col6 {
+  width: calc(50%);
+}
+.container .col7 {
+  width: calc(58.333333333333336%);
+}
+.container .col8 {
+  width: calc(66.66666666666667%);
+}
+.container .col9 {
+  width: calc(75%);
+}
+.container .col10 {
+  width: calc(83.33333333333334%);
+}
+.container .col11 {
+  width: calc(91.66666666666667%);
+}
+.container .col12 {
+  width: calc(100%);
+}
+/*******/
+.container-layout {
+  background: black;
+  overflow: hidden;
+}
+.container-layout > .sidebar,
+.container-layout > .content {
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 14px;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.container-layout.split200 > .sidebar {
+  width: 200px;
+}
+.container-layout.split200 > .content {
+  padding-left: 200px;
+}
+.container-layout.split200.right > .sidebar {
+  left: 100%;
+  margin-left: -200px;
+}
+.container-layout.split200.right > .content {
+  padding-left: 0;
+  padding-right: 200px;
+}
+.container-layout.split300 > .sidebar {
+  width: 300px;
+}
+.container-layout.split300 > .content {
+  padding-left: 300px;
+}
+.container-layout.split300.right > .sidebar {
+  left: 100%;
+  margin-left: -300px;
+}
+.container-layout.split300.right > .content {
+  padding-left: 0;
+  padding-right: 300px;
+}
+.container-layout.split400 > .sidebar {
+  width: 400px;
+}
+.container-layout.split400 > .content {
+  padding-left: 400px;
+}
+.container-layout.split400.right > .sidebar {
+  left: 100%;
+  margin-left: -400px;
+}
+.container-layout.split400.right > .content {
+  padding-left: 0;
+  padding-right: 400px;
+}
+.container-layout.split-half > .sidebar {
+  width: 50%;
+}
+.container-layout.split-half > .content {
+  padding-left: 50%;
+}
+.container-layout.split-half.right > .sidebar {
+  left: 100%;
+  margin-left: -50%;
+}
+.container-layout.split-half.right > .content {
+  padding-left: 0;
+  padding-right: 50%;
+}
+.container-layout > .sidebar {
+  background: green;
+  z-index: 2;
+}
+.container-layout > .content {
+  background: yellow;
+  z-index: 1;
+}
