@@ -1,9 +1,7 @@
 body,
 html {
   height: 100%;
-  min-height: 100%;
   max-height: 100%;
-  min-width: 100%;
   max-width: 100%;
   width: 100%;
 }
@@ -11,70 +9,72 @@ html {
 .container-layout {
   background: red;
   box-sizing: border-box;
-  height: 100%;
   font-size: 0;
+  height: auto;
   overflow: hidden;
   position: relative;
   width: 100%;
   z-index: 1;
 }
-.container .col1,
-.container .col2,
-.container .col3,
-.container .col4,
-.container .col5,
-.container .col6,
-.container .col7,
-.container .col8,
-.container .col9,
-.container .col10,
-.container .col11,
-.container .col12 {
+.container > .col1,
+.container > .col2,
+.container > .col3,
+.container > .col4,
+.container > .col5,
+.container > .col6,
+.container > .col7,
+.container > .col8,
+.container > .col9,
+.container > .col10,
+.container > .col11,
+.container > .col12 {
   background: blue;
   box-sizing: border-box;
   display: inline-block;
+  font-size: 14px;
   height: 100%;
   position: relative;
+  vertical-align: top;
 }
-.container .col1 {
-  width: calc(8.333333333333334%);
+.container > .col1 {
+  width: 8.333333333333334%;
 }
-.container .col2 {
-  width: calc(16.666666666666668%);
+.container > .col2 {
+  width: 16.666666666666668%;
 }
-.container .col3 {
-  width: calc(33.333333333333336%);
+.container > .col3 {
+  width: 33.333333333333336%;
 }
-.container .col4 {
-  width: calc(33.333333333333336%);
+.container > .col4 {
+  width: 33.333333333333336%;
 }
-.container .col5 {
-  width: calc(41.66666666666667%);
+.container > .col5 {
+  width: 8.333333333333334%;
 }
-.container .col6 {
-  width: calc(50%);
+.container > .col6 {
+  width: 50%;
 }
-.container .col7 {
-  width: calc(58.333333333333336%);
+.container > .col7 {
+  width: 58.333333333333336%;
 }
-.container .col8 {
-  width: calc(66.66666666666667%);
+.container > .col8 {
+  width: 66.66666666666667%;
 }
-.container .col9 {
-  width: calc(75%);
+.container > .col9 {
+  width: 75%;
 }
-.container .col10 {
-  width: calc(83.33333333333334%);
+.container > .col10 {
+  width: 83.33333333333334%;
 }
-.container .col11 {
-  width: calc(91.66666666666667%);
+.container > .col11 {
+  width: 91.66666666666667%;
 }
-.container .col12 {
-  width: calc(100%);
+.container > .col12 {
+  width: 100%;
 }
-/*******/
 .container-layout {
   background: black;
+  height: 100%;
   overflow: hidden;
 }
 .container-layout > .sidebar,
@@ -102,6 +102,20 @@ html {
   padding-left: 0;
   padding-right: 200px;
 }
+.container-layout.split250 > .sidebar {
+  width: 250px;
+}
+.container-layout.split250 > .content {
+  padding-left: 250px;
+}
+.container-layout.split250.right > .sidebar {
+  left: 100%;
+  margin-left: -250px;
+}
+.container-layout.split250.right > .content {
+  padding-left: 0;
+  padding-right: 250px;
+}
 .container-layout.split300 > .sidebar {
   width: 300px;
 }
@@ -116,6 +130,20 @@ html {
   padding-left: 0;
   padding-right: 300px;
 }
+.container-layout.split350 > .sidebar {
+  width: 350px;
+}
+.container-layout.split350 > .content {
+  padding-left: 350px;
+}
+.container-layout.split350.right > .sidebar {
+  left: 100%;
+  margin-left: -350px;
+}
+.container-layout.split350.right > .content {
+  padding-left: 0;
+  padding-right: 350px;
+}
 .container-layout.split400 > .sidebar {
   width: 400px;
 }
@@ -129,6 +157,20 @@ html {
 .container-layout.split400.right > .content {
   padding-left: 0;
   padding-right: 400px;
+}
+.container-layout.split450 > .sidebar {
+  width: 450px;
+}
+.container-layout.split450 > .content {
+  padding-left: 450px;
+}
+.container-layout.split450.right > .sidebar {
+  left: 100%;
+  margin-left: -450px;
+}
+.container-layout.split450.right > .content {
+  padding-left: 0;
+  padding-right: 450px;
 }
 .container-layout.split-half > .sidebar {
   width: 50%;
@@ -146,6 +188,7 @@ html {
 }
 .container-layout > .sidebar {
   background: green;
+  width: 100%;
   z-index: 2;
 }
 .container-layout > .content {
