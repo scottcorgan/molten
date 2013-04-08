@@ -178,20 +178,6 @@ html {
   padding-left: 0;
   padding-right: 450px;
 }
-.grid.columns.split-half > .bar {
-  width: 50%;
-}
-.grid.columns.split-half > .content {
-  padding-left: 50%;
-}
-.grid.columns.split-half.right > .bar {
-  left: 100%;
-  margin-left: -50%;
-}
-.grid.columns.split-half.right > .content {
-  padding-left: 0;
-  padding-right: 50%;
-}
 .grid.columns > .bar {
   background: green;
   z-index: 2;
