@@ -1,7 +1,7 @@
 {
-  "name": "gird",
-  "version": "0.0.1",
-  "description": "Fixed application grids",
+  "name": "molten",
+  "version": "0.2.0",
+  "description": "A flowing web application css grid volcano.",
   "main": "Gruntfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/scottcorgan/gird.git"
+    "url": "git://github.com/scottcorgan/molten.git"
   },
   "author": "",
   "license": "BSD",
