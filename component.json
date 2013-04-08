@@ -1,15 +1,6 @@
 {
   "name": "molten",
   "version": "0.2.0",
-  "main": "molten/molten.css",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "components"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:scottcorgan/molten.git"
-  },
+  "main": "molten/molten.css"
   "description": " flowing web application css grid volcano"
 }
