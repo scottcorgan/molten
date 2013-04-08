@@ -15,10 +15,10 @@ Ever wonder where all the css grids are that allow you to create **full width** 
 ```html
 <div class="grid columns split250">
   <div class="bar">
-    <!-- left sidebar -->
+    <!-- left sidebar (250px) -->
   </div>
   <div class="content">
-    <!-- the content -->
+    <!-- the content (fluid) -->
   </div>
 </div>
 ```
@@ -30,20 +30,22 @@ Ever wonder where all the css grids are that allow you to create **full width** 
 You can nest rows and columns within rows and columns to help you build complex layouts.
 There is no limit to how many grids you can nest.
 
+![nested-column-row-grid](https://f.cloud.github.com/assets/974723/353690/b219c26e-a088-11e2-9a21-dc14abd763b0.gif)
+
 ```html
 <div class="grid columns split250">
   <div class="bar">
-    <!-- left sidebar -->
+    <!-- left sidebar (250px) -->
   </div>
   <div class="content">
   
     <!-- Girdception!! -->
     <div class="grid rows split50">
       <div class="bar">
-        <!-- topbar -->
+        <!-- topbar (50px) -->
       </div>
       <div class="content">
-        <!-- content -->
+        <!-- content (fluid) -->
       </div>
     </div>
     
