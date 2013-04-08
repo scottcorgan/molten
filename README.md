@@ -51,3 +51,12 @@ There is no limit to how many grids you can nest.
   </div>
 </div>
 ```
+
+## Browser Support
+
+**Desktop:**
+* Chrome 24+
+* Firefox 19+
+* Safari 6+
+
+**Mobile:** *Find another framework. This is for deskopt only. Don't cry.*
