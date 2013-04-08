@@ -23,7 +23,9 @@ Ever wonder where all the css grids are that allow you to create full width and 
 
 ## Nesting for complex layouts
 
-**Molten** gives you classes to create grids based on columns and rows. You can nest rows and columns within rows and columns to give you gridception.
+**Molten** gives you classes to create grids based on columns and rows.
+You can nest rows and columns within rows and columns to help you build complex layouts.
+There is no limit to how many grids you can nest.
 
 ```html
 <div class="grid columns split250">
