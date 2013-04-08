@@ -8,7 +8,9 @@ Ever wonder where all the css grids are that allow you to create full width and 
 
 ## Grid Basics
 
-### Basic grid set up
+### Basic Grid
+
+![basic-column-grid](https://f.cloud.github.com/assets/974723/353654/b3be0270-a087-11e2-8e90-bd947b303c0c.gif)
 
 ```html
 <div class="grid columns split250">
@@ -20,6 +22,7 @@ Ever wonder where all the css grids are that allow you to create full width and 
   </div>
 </div>
 ```
+
 
 ## Nesting for complex layouts
 
