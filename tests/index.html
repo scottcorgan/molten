@@ -12,6 +12,40 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="../molten/molten.css">
         
+        <style>
+            .grid{
+                background:red;
+            }
+            
+            .columns{
+                background:black;
+            }
+            
+            .columns .bar{
+                background:green;
+            }
+            
+            .columns .content{
+                background:yellow;
+            }
+            
+            .rows{
+                background:black;
+            }
+            
+            .rows .bar{
+                background:orange;
+            }
+            
+            .rows .content{
+                background:teal;
+            }
+            
+            [class*="col"]{
+                background:gray;
+            }
+        </style>
+        
     </head>
     <body>
         
@@ -19,7 +53,7 @@
         <div class="grid columns split250">
             
             <aside class="bar">
-                <div class="grid rows split50 collapse">
+                <div class="grid rows split50">
                     <header class="bar">sidebar left header</header>
                     <div class="content">sidebar left content</div>
                 </div>
@@ -37,8 +71,8 @@
                     
                     <div class="content">
                         <div class="grid grid-pad">
-                             <div class="col6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, debitis, rerum, eos blanditiis vel sunt tenetur sequi perferendis veniam molestiae aspernatur repellendus animi voluptates delectus et esse modi vero cupiditate.</div>
-                             <div class="col6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quis, fugit, velit quos ipsum voluptate magnam reprehenderit consectetur quo laborum accusamus itaque natus rem praesentium dolorem dolore consequuntur autem aut.</div>
+                             <div class="col-1-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, debitis, rerum, eos blanditiis vel sunt tenetur sequi perferendis veniam molestiae aspernatur repellendus animi voluptates delectus et esse modi vero cupiditate.</div>
+                             <div class="col-1-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quis, fugit, velit quos ipsum voluptate magnam reprehenderit consectetur quo laborum accusamus itaque natus rem praesentium dolorem dolore consequuntur autem aut.</div>
                         </div>
                     </div>
                     
