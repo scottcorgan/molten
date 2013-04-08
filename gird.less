@@ -1,23 +1,60 @@
 @grid-count: 12;
-@default-font-size: 14px;
 @gutter: 20px;
 
 // Set up layout column according to width
 
-.layout-column(@sidebar-width: 200px) {
+.column(@bar-width: 200px) {
     
-    & > .sidebar{ width:@sidebar-width; }
-    & > .content{ padding-left:@sidebar-width; }
+    & > .bar{ width:@bar-width; }
+    & > .content{
+        padding-left:@bar-width;
+        
+        // *************************************************************************
+        // Not sure if we keep this consistent and use "calc()" or use
+        // padding for the width issues. For some reason, the browser renders
+        // the scroll bar correction with horizontal padding
+        // but inconrrectly on vertical padding.
+        
+        // left:@bar-width;
+        // width:~"calc(100% - @{bar-width})";
+        
+        // *************************************************************************
+        
+    }
     
     &.right{
-        & > .sidebar{
+        & > .bar{
             left:100%;
-            margin-left:-@sidebar-width;
+            margin-left:-@bar-width;
         }
         
         & > .content{
             padding-left:0;
-            padding-right:@sidebar-width;
+            padding-right:@bar-width;
+        }
+    }
+}
+
+.row(@bar-height: 60px){
+    & > .bar{ 
+        height:@bar-height;
+        line-height:@bar-height;
+    }
+    & > .content{
+        height:~"-webkit-calc(100% - @{bar-height})"; /* hack for safari 6 */
+        height:~"calc(100% - @{bar-height})";
+        top:@bar-height;
+    }
+    
+    &.bottom{
+        & > .bar{ 
+            margin-top:-@bar-height;
+            top:100%;
+        }
+        & > .content{
+            height:~"-webkit-calc(100% - @{bar-height})"; /* hack for safari 6 */
+            height:~"calc(100% - @{bar-height})";
+            top:0;
         }
     }
 }
@@ -30,6 +67,13 @@
 
 ////////////////////////////////////////////////
 
+
+
+// TODO: write a collabse class to collapse bars!!!!!!!!!
+
+
+
+
 body,
 html{
     height:100%;
@@ -38,19 +82,17 @@ html{
     width:100%;
 }
 
-.grid,
-.grid-layout{
-    background:red;
+.grid{
     overflow:hidden;
-    position:relative;
     width:100%;
     z-index:1;
     
     .box-sizing();
- }
- 
- .grid{
+}
+
+.grid{
     margin:0 0 @gutter 0;
+    position:relative;
     
     &.grid-pad{
         padding: @gutter 0 @gutter @gutter;
@@ -67,7 +109,7 @@ html{
     }
     
     & > [class*="col"]{
-        background:gray;
+        // background:gray;
         float:left;
         padding-right:@gutter;
         position:relative;
@@ -107,18 +149,15 @@ html{
     // & > .col12{ width:round(100%/@grid-count*12, 2); }
 }
 
-// Layout styles
-.grid-layout{
+/* Column styles */
+.grid.columns{
     background:black;
     height:100%;
-    overflow:hidden;
- }
-
-.grid-layout{
-    & > .sidebar,
+    margin:0;
+    
+    & > .bar,
     & > .content{
         height:100%;
-        font-size:@default-font-size;
         left:0;
         overflow:auto;
         position:absolute;
@@ -128,23 +167,53 @@ html{
         .box-sizing();
     }
     
-    &.split200{ .layout-column(200px); }
-    &.split250{ .layout-column(250px); }
-    &.split300{ .layout-column(300px); }
-    &.split350{ .layout-column(350px); }
-    &.split400{ .layout-column(400px); }
-    &.split450{ .layout-column(450px); }
-    &.split-half{ .layout-column(50%); }
+    &.split200{ .column(200px); }
+    &.split250{ .column(250px); }
+    &.split300{ .column(300px); }
+    &.split350{ .column(350px); }
+    &.split400{ .column(400px); }
+    &.split450{ .column(450px); }
+    &.split-half{ .column(50%); }
     
     
-    & > .sidebar{
+    & > .bar{
         background:green;
-        width:100%;
         z-index:2;
     }
     
     & > .content{
         background:yellow;
         z-index:1;
+    }
+}
+
+/* Row styles */
+.grid.rows{
+    background:black;
+    height:100%;
+    margin:0;
+    
+    & > .bar,
+    & > .content{
+        left:0;
+        overflow:auto;
+        position:absolute;
+        top:0;
+        width:100%;
+    }
+    
+    &.split50{ .row(50px); }
+    &.split60{ .row(60px); }
+    &.split70{ .row(70px); }
+    &.split80{ .row(80px); }
+    &.split90{ .row(90px); }
+    &.split100{ .row(100px); }
+    
+    & > .bar{
+        background:orange;
+    }
+    
+    & > .content{
+        background:yellow;
     }
 }
