@@ -14,6 +14,8 @@
         // padding for the width issues. For some reason, the browser renders
         // the scroll bar correction with horizontal padding
         // but inconrrectly on vertical padding.
+        // 
+        // Maybe we do so that we can get rid of the z-index hack for columns
         
         // left:@bar-width;
         // width:~"calc(100% - @{bar-width})";
@@ -154,12 +156,13 @@ html{
         .box-sizing();
     }
     
+    &.split100{ .column(100px); }
+    &.split150{ .column(150px); }
     &.split200{ .column(200px); }
     &.split250{ .column(250px); }
     &.split300{ .column(300px); }
     &.split350{ .column(350px); }
     &.split400{ .column(400px); }
-    &.split450{ .column(450px); }
     
     & > .bar{
         background:green;
@@ -187,18 +190,11 @@ html{
         width:100%;
     }
     
+    &.split40{ .row(40px); }
     &.split50{ .row(50px); }
     &.split60{ .row(60px); }
     &.split70{ .row(70px); }
     &.split80{ .row(80px); }
     &.split90{ .row(90px); }
     &.split100{ .row(100px); }
-    
-    & > .bar{
-        background:orange;
-    }
-    
-    & > .content{
-        background:yellow;
-    }
 }
