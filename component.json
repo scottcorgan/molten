@@ -2,5 +2,5 @@
   "name": "molten",
   "version": "0.2.1",
   "main": "./molten/molten.css",
-  "description": " flowing web application css grid volcano"
+  "description": "A fixed-fluid web application css grid volcano"
 }
