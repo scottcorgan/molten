@@ -78,7 +78,6 @@ html {
 }
 /* Column styles */
 .grid.columns {
-  background: black;
   height: 100%;
   margin: 0;
 }
@@ -193,16 +192,25 @@ html {
   padding-right: 400px;
 }
 .grid.columns > .bar {
-  background: green;
   z-index: 2;
 }
 .grid.columns > .content {
-  background: yellow;
   z-index: 1;
+}
+.grid.columns.collapse > .bar {
+  width: 0;
+}
+.grid.columns.collapse > .content {
+  padding-left: 0;
+}
+.grid.columns.right.collapse > .bar {
+  margin-left: 0;
+}
+.grid.columns.right.collapse > .content {
+  padding-right: 0;
 }
 /* Row styles */
 .grid.rows {
-  background: black;
   height: 100%;
   margin: 0;
 }
@@ -367,4 +375,17 @@ html {
 
   height: calc(100% - 100px);
   top: 0;
+}
+.grid.rows.collapse > .bar {
+  height: 0;
+}
+.grid.rows.collapse > .content {
+  height: 100%;
+  top: 0;
+}
+.grid.rows.bottom.collapse > .bar {
+  height: 0;
+}
+.grid.rows.bottom.collapse > .content {
+  height: 100%;
 }
