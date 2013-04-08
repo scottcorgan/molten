@@ -1,6 +1,6 @@
 # Molten
 
-A flowing web application css grid volcano.
+A fixed-fluid web application css grid volcano.
 
 ![molten-cat](https://f.cloud.github.com/assets/974723/353520/d3d5e8c4-a083-11e2-92d4-0b10d4fe6313.jpg)
 
@@ -8,7 +8,7 @@ Ever wonder where all the css grids are that allow you to create **full width** 
 
 ## Table of Contents
 * [Install](https://github.com/scottcorgan/molten/blob/master/README.md#install)
-* [Basic Grid](https://github.com/scottcorgan/molten/blob/master/README.md#basic-grid)
+* [Basic Fixed-Fluid Grid](https://github.com/scottcorgan/molten/blob/master/README.md#basic-grid)
 * [Nesting for Complex Layouts](https://github.com/scottcorgan/molten/blob/master/README.md#nesting-for-complex-layouts)
 * [Grid Types](https://github.com/scottcorgan/molten/blob/master/README.md#grid-types)
 * [Grid Sizes](https://github.com/scottcorgan/molten/blob/master/README.md#grid-sizes)
