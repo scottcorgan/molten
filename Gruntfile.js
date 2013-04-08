@@ -6,14 +6,14 @@ module.exports = function (grunt) {
         less: {
             gird: {
                 files: {
-                    'gird.css': 'gird.less'
+                    'molten/molten.css': 'molten.less'
                 }
             }
         },
         
         watch: {
             css: {
-                files: ['gird.less'],
+                files: ['molten.less'],
                 tasks: ['default']
             }
         }
