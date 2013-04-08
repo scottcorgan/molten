@@ -52,6 +52,56 @@ There is no limit to how many grids you can nest.
 </div>
 ```
 
+## Grid Types
+
+### Left
+```html
+<div class="grid columns split250">
+  <div class="bar">
+    <!-- left sidebar (250px) -->
+  </div>
+  <div class="content">
+    <!-- the content (fluid) -->
+  </div>
+</div>
+```
+
+### Right
+```html
+<div class="grid columns split250 right"> <!-- only need to add the "right" class name -->
+  <div class="bar">
+    <!-- right sidebar (250px) -->
+  </div>
+  <div class="content">
+    <!-- the content (fluid) -->
+  </div>
+</div>
+```
+
+### Top
+```html
+<div class="grid rows split50"> <!-- use "rows" instead of "columns" for a top bar -->
+  <div class="bar">
+    <!-- top bar (50px) -->
+  </div>
+  <div class="content">
+    <!-- the content (fluid) -->
+  </div>
+</div>
+```
+
+### Bottom
+```html
+<div class="grid rows split50 bottom"> <!-- only need to add the "bottom" class name -->
+  <div class="bar">
+    <!-- bottom bar (50px) -->
+  </div>
+  <div class="content">
+    <!-- the content (fluid) -->
+  </div>
+</div>
+```
+
 ## Browser Support
 
 **Desktop:**
