@@ -55,6 +55,9 @@ There is no limit to how many grids you can nest.
 ## Grid Types
 
 ### Left
+
+Sidebar on the left side
+
 ```html
 <div class="grid columns split250">
   <div class="bar">
@@ -67,6 +70,9 @@ There is no limit to how many grids you can nest.
 ```
 
 ### Right
+
+Sidebar on the right side
+
 ```html
 <div class="grid columns split250 right"> <!-- only need to add the "right" class name -->
   <div class="bar">
@@ -79,6 +85,9 @@ There is no limit to how many grids you can nest.
 ```
 
 ### Top
+
+Header bar along the top
+
 ```html
 <div class="grid rows split50"> <!-- use "rows" instead of "columns" for a top bar -->
   <div class="bar">
@@ -91,6 +100,9 @@ There is no limit to how many grids you can nest.
 ```
 
 ### Bottom
+
+Footer bar long the bottom
+
 ```html
 <div class="grid rows split50 bottom"> <!-- only need to add the "bottom" class name -->
   <div class="bar">
@@ -101,6 +113,10 @@ There is no limit to how many grids you can nest.
   </div>
 </div>
 ```
+
+## Grid Sizes
+### Columns
+### Rows
 
 ## Browser Support
 
