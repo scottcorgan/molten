@@ -115,8 +115,22 @@ Footer bar long the bottom
 ```
 
 ## Grid Sizes
-### Columns
-### Rows
+
+### Column widths
+* 200px - ` .split200 `
+* 250px - ` .split250 `
+* 300px - ` .split300 `
+* 350px - ` .split350 `
+* 400px - ` .split400 `
+* 450px - ` .split450 `
+
+### Row heights
+* 50px - ` .split50 `
+* 60px - ` .split60 `
+* 70px - ` .split70 `
+* 80px - ` .split80 `
+* 90px - ` .split90 `
+* 100px - ` .split100 `
 
 ## Browser Support
 
