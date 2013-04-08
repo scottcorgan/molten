@@ -12,11 +12,30 @@ Ever wonder where all the css grids are that allow you to create full width and 
 
 ```html
 <div class="grid columns split250">
-  <div class="bar"></div>
-  <div class="content"></div>
+  <div class="bar">
+    <!-- sidebar -->
+  </div>
+  <div class="content">
+    <!-- the content -->
+  </div>
 </div>
 ```
 
-## That's it? What does it mean?!
+## Nesting for complex layouts
 
-**Molten** gives you classes to create grids based on columns and rows.
+**Molten** gives you classes to create grids based on columns and rows. You can nest rows and columns within rows and columns to give you gridception.
+
+```html
+<div class="grid columns split250">
+  <div class="bar"></div>
+  <div class="content">
+  
+    <!-- Girdception!! -->
+    <div class="grid rows split50">
+      <div class="bar"></div>
+      <div class="content"></div>
+    </div>
+    
+  </div>
+</div>
+```
