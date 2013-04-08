@@ -6,9 +6,9 @@ A flowing web application css grid volcano.
 
 Ever wonder where all the css grids are that allow you to create **full width** and **full height** web layouts?
 
-## Grid Basics
+## Basic Grid
 
-### Basic Grid
+Creating a basic 2 column, left sidebar grid.
 
 ![basic-column-grid](https://f.cloud.github.com/assets/974723/353676/4715cd64-a088-11e2-8e08-1ab2f555793e.gif)
 
@@ -22,7 +22,6 @@ Ever wonder where all the css grids are that allow you to create **full width** 
   </div>
 </div>
 ```
-
 
 ## Nesting for complex layouts
 
