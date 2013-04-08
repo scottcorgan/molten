@@ -13,7 +13,7 @@ Ever wonder where all the css grids are that allow you to create full width and 
 ```html
 <div class="grid columns split250">
   <div class="bar">
-    <!-- sidebar -->
+    <!-- left sidebar -->
   </div>
   <div class="content">
     <!-- the content -->
@@ -27,13 +27,19 @@ Ever wonder where all the css grids are that allow you to create full width and 
 
 ```html
 <div class="grid columns split250">
-  <div class="bar"></div>
+  <div class="bar">
+    <!-- left sidebar -->
+  </div>
   <div class="content">
   
     <!-- Girdception!! -->
     <div class="grid rows split50">
-      <div class="bar"></div>
-      <div class="content"></div>
+      <div class="bar">
+        <!-- topbar -->
+      </div>
+      <div class="content">
+        <!-- content -->
+      </div>
     </div>
     
   </div>
