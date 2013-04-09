@@ -14,6 +14,13 @@ Ever wonder where all the css grids are that allow you to create **full width** 
 * [Grid Sizes](https://github.com/scottcorgan/molten/blob/master/README.md#grid-sizes)
 * [Browser Support](https://github.com/scottcorgan/molten/blob/master/README.md#browser-support)
 
+
+## Play with an Example
+
+Play with the code on Codepen:
+
+http://codepen.io/scottcorgan/pen/jkHov
+
 ## Install
 
 User [Bower](http://twitter.github.io/bower/) to install as a component:
