@@ -22,6 +22,8 @@ Play with the code on Codepen:
 
 http://codepen.io/scottcorgan/pen/jkHov
 
+[![Screen Shot 2013-04-09 at 10 43 24 AM](https://f.cloud.github.com/assets/974723/358270/02fb8eb0-a13d-11e2-9247-790182021d8f.png)](http://codepen.io/scottcorgan/pen/jkHov)
+
 ## Install
 
 User [Bower](http://twitter.github.io/bower/) to install as a component:
