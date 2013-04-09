@@ -7,6 +7,7 @@ A fixed-fluid web application css grid volcano.
 Ever wonder where all the css grids are that allow you to create **full width** and **full height** web layouts?
 
 ## Table of Contents
+* [Play with an Example](https://github.com/scottcorgan/molten#play-with-an-example)
 * [Install](https://github.com/scottcorgan/molten/blob/master/README.md#install)
 * [Basic Fixed-Fluid Grid](https://github.com/scottcorgan/molten/blob/master/README.md#basic-grid)
 * [Nesting for Complex Layouts](https://github.com/scottcorgan/molten/blob/master/README.md#nesting-for-complex-layouts)
