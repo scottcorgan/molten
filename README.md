@@ -156,5 +156,6 @@ Footer bar long the bottom
 * Chrome 24+
 * Firefox 19+
 * Safari 6+
+* IE 9+
 
 **Mobile:** *Find another framework. This is for deskopt only. Don't cry.*
