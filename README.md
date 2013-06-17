@@ -24,10 +24,26 @@ http://codepen.io/scottcorgan/pen/jkHov
 
 ## Install
 
-Use [Bower](http://twitter.github.io/bower/) to install as a component:
+Install with [Bower](http://twitter.github.io/bower/)
 
 ```
 bower install molten --save
+```
+
+## Usage
+
+**HTML**
+
+```
+<link rel="stylesheet" href="path/to/components/molten/molten.css">
+```
+
+or **Import** - sass/scss/less
+
+```
+@import 'path/to/molten.scss'; - scss/sass
+
+@import 'path/to/molten.less'; - less
 ```
 
 ## Basic Grid
