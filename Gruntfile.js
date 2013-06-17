@@ -4,9 +4,18 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON('package.json'),
         
         less: {
-            gird: {
+            development: {
                 files: {
-                    'molten/molten.css': 'molten.less'
+                    'molten.css': 'molten.less',
+                    'molten.scss': 'molten.less'
+                }
+            },
+            production: {
+                options: {
+                    yuicompress: true
+                },
+                files: {
+                    'molten.min.css': 'molten.less'
                 }
             }
         },
