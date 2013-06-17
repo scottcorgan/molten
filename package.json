@@ -1,6 +1,6 @@
 {
   "name": "molten",
-  "version": "0.3.0",
+  "version": "0.4.1",
   "description": "A fixed-fluid web application css grid volcano.",
   "main": "Gruntfile.js",
   "dependencies": {},
