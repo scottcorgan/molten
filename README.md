@@ -1,8 +1,6 @@
 # Molten
 
-A fixed-fluid web application css grid volcano.
-
-![molten-cat](https://f.cloud.github.com/assets/974723/353520/d3d5e8c4-a083-11e2-92d4-0b10d4fe6313.jpg)
+A fixed-fluid, full-width web application css grid.
 
 Ever wonder where all the css grids are that allow you to create **full width** and **full height** web layouts?
 
@@ -29,7 +27,7 @@ http://codepen.io/scottcorgan/pen/jkHov
 User [Bower](http://twitter.github.io/bower/) to install as a component:
 
 ```
-bower install molten
+bower install molten --save
 ```
 
 ## Basic Grid
@@ -146,12 +144,18 @@ Footer bar long the bottom
 * 100px - ` .split100 `
 * 150px - ` .split150 `
 * 200px - ` .split200 `
+* 225px - ` .split225 `
 * 250px - ` .split250 `
+* 275px - ` .split275 `
 * 300px - ` .split300 `
+* 325px - ` .split325 `
 * 350px - ` .split350 `
+* 375px - ` .split375 `
 * 400px - ` .split400 `
 
 ### Fixed Row Heights
+* 20px - ` .split20 `
+* 30px - ` .split30 `
 * 40px - ` .split40 `
 * 50px - ` .split50 `
 * 60px - ` .split60 `
@@ -159,6 +163,7 @@ Footer bar long the bottom
 * 80px - ` .split80 `
 * 90px - ` .split90 `
 * 100px - ` .split100 `
+* 200px - ` .split200 `
 
 ## Browser Support
 
