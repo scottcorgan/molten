@@ -24,10 +24,26 @@ http://codepen.io/scottcorgan/pen/jkHov
 
 ## Install
 
-User [Bower](http://twitter.github.io/bower/) to install as a component:
+Install with [Bower](http://twitter.github.io/bower/)
 
 ```
 bower install molten --save
+```
+
+## Usage
+
+**HTML**
+
+```
+<link rel="stylesheet" href="path/to/components/molten/molten.css">
+```
+
+or **Import** - sass/scss/less
+
+```
+@import 'path/to/molten.scss'; - scss/sass
+
+@import 'path/to/molten.less'; - less
 ```
 
 ## Basic Grid
@@ -38,12 +54,12 @@ Creating a basic 2 column, left sidebar grid.
 
 ```html
 <div class="grid columns split250">
-  <div class="bar">
+  <aside class="bar">
     <!-- left sidebar (250px) -->
-  </div>
-  <div class="content">
+  </aside>
+  <section class="content">
     <!-- the content (fluid) -->
-  </div>
+  </section>
 </div>
 ```
 
@@ -57,20 +73,20 @@ There is no limit to how many grids you can nest.
 
 ```html
 <div class="grid columns split250">
-  <div class="bar">
+  <nav class="bar">
     <!-- left sidebar (250px) -->
-  </div>
+  </nav>
   <div class="content">
   
     <!-- Girdception!! -->
-    <div class="grid rows split50">
-      <div class="bar">
+    <section class="grid rows split50">
+      <aside class="bar">
         <!-- topbar (50px) -->
-      </div>
-      <div class="content">
+      </aside>
+      <article class="content">
         <!-- content (fluid) -->
-      </div>
-    </div>
+      </article>
+    </section>
     
   </div>
 </div>
