@@ -171,6 +171,7 @@ Footer bar long the bottom
 * 400px - ` .split400 `
 
 ### Fixed Row Heights
+* 10px - ` .split10 `
 * 20px - ` .split20 `
 * 30px - ` .split30 `
 * 40px - ` .split40 `
