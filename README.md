@@ -141,6 +141,7 @@ Footer bar long the bottom
 ## Grid Sizes
 
 ### Fixed Column Widths
+* 50px - ` .split50 `
 * 100px - ` .split100 `
 * 150px - ` .split150 `
 * 200px - ` .split200 `
@@ -164,6 +165,7 @@ Footer bar long the bottom
 * 90px - ` .split90 `
 * 100px - ` .split100 `
 * 200px - ` .split200 `
+* 300px - ` .split300 `
 
 ## Browser Support
 
