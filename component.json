@@ -1,6 +1,0 @@
-{
-  "name": "molten",
-  "version": "0.4.2",
-  "main": "./molten/molten.css",
-  "description": "A fixed-fluid web application css grid volcano"
-}

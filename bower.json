@@ -1,0 +1,26 @@
+{
+  "name": "molten",
+  "version": "0.4.2",
+  "main": "./molten/molten.css",
+  "description": "A fixed-fluid web application css grid volcano",
+  "homepage": "https://github.com/scottcorgan/molten",
+  "authors": [
+    "Scott Corgan <scottcorgan@gmail.com>"
+  ],
+  "keywords": [
+    "css",
+    "grid",
+    "web",
+    "app"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "package.json",
+    "README.md"
+  ]
+}
