@@ -24,7 +24,7 @@ http://codepen.io/scottcorgan/pen/jkHov
 
 ## Install
 
-Install with [Bower](http://twitter.github.io/bower/)
+Install with [Bower](https://bower.io/)
 
 ```
 bower install molten --save
